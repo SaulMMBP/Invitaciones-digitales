@@ -61,6 +61,7 @@ span {
 /* ============= Components ========== */
 /* ============= Buttons ========== */
 .button {
+    background: none;
     padding: 0.5rem 1rem;
     text-decoration: none;
     border: 1px solid black;
@@ -71,6 +72,24 @@ span {
     align-items: center;
     gap: 0.25rem;
     margin: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+input {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    margin: 1rem 0;
+    box-shadow: inset 1px 1px 5px 0 #a5a5a5;
 }
 
 /* ============= Main ========== */
@@ -87,29 +106,37 @@ span {
 .countdown-section {
     padding: 2rem 0;
     margin-bottom: 2rem;
-    background-image: url("../img/background3.png");
-    background-size: 200%;
-    background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-color: #ff0900;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     color: white;
 }
 
 .countdown-section .marco {
     margin: 1rem 0 2rem;
     width: 100%;
-    height: 16rem;
+    aspect-ratio: 4 / 3;
     background-image: url("../img/marco.png");
     background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: 67% 65%;
+    background-size: 100%;
+    background-position: 50% 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.countdown-section .marco > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.countdown-section .seconds {
+    grid-column: 1 / 4;
 }
 
 .countdown-section .countdown {
-    font-size: 4rem;
+    font-size: 2rem;
+
 }
 
 /* =========== Seccion itinerario ========= */
@@ -131,3 +158,29 @@ span {
 .codigo-vestimenta-section {
     margin: 2rem 0;
 }
+
+.custom-icon {
+    width: 5rem;
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: 50% 50%;
+    margin: 1rem;
+}
+
+.codigo-vestimenta-icon {
+    background-image: url('../icons/codigo-de-vestimenta.png');
+}
+
+/* =========== Sección Confirmación ========= */
+.confirmacion-section {
+    margin: 4rem 0;
+}
+
+.confirmacion-section form {
+    background-color: white;
+    padding: 1rem 1rem 0;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px 0 #a89e8e;
+}
+
