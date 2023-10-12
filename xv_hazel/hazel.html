@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/stars.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100">
+    
+    <script src="./resources/js/index.js"></script>
 </head>
-<body>
+<body onload="main()">
     <div class="stars">
         <div id="star1"></div>
         <div id="star2"></div>
@@ -48,7 +50,7 @@
                     <span>20:00</span>
                 </div>
             </div>
-            <a href="https://maps.app.goo.gl/7iJwjGexuGYyWKki6">
+            <a class="button" href="https://maps.app.goo.gl/7iJwjGexuGYyWKki6">
                 <i class="material-symbols-outlined">location_on</i>
                 Salón Fuentes
             </a>
@@ -60,9 +62,10 @@
             <span>Formal</span>
         </section>
         <section class="confirmacion-section">
-
+            <a class="button" href="">
+                Confirmar Asistencia
+            </a>
         </section>
     </main>
 </body>
-<script src="./resources/js/index.js" type="module"></script>
 </html>

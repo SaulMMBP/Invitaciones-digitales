@@ -60,7 +60,7 @@ span {
 
 /* ============= Components ========== */
 /* ============= Buttons ========== */
-a {
+.button {
     padding: 0.5rem 1rem;
     text-decoration: none;
     border: 1px solid black;
