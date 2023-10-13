@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;300&display=swap');
 
 /* ============= General ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
 html {
     background-color: #ebe4d9;
     background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
     color: rgb(41, 41, 41);
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 section {
@@ -49,17 +50,7 @@ span {
     display: block;
 }
 
-.emphasis {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-}
-
-.material-symbols-outlined.icon-big {
-    font-size: 7rem;
-}
-
 /* ============= Components ========== */
-/* ============= Buttons ========== */
 .button {
     background: none;
     padding: 0.5rem 1rem;
@@ -72,7 +63,6 @@ span {
     align-items: center;
     gap: 0.25rem;
     margin: 2rem;
-    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
 }
 
@@ -86,33 +76,76 @@ input {
     border: none;
     border-radius: 25px;
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
     outline: none;
     margin: 1rem 0;
     box-shadow: inset 1px 1px 5px 0 #a5a5a5;
 }
 
+hr {
+    height: 128px;
+    background-image: url("../img/Flor.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 48px;
+    border: none;
+}
+
+.emphasis {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+.material-symbols-outlined.icon-big {
+    font-size: 7rem;
+}
+
+.music-btn {
+    position: fixed;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(235, 235, 235);
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1rem;
+    right: 1rem;
+    box-shadow: 0 0 32px 0 rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+.material-symbols-outlined.icon-medium {
+    font-size: 2rem;
+}
+
+.music-btn .hidden {
+    display: none;
+}
+
 /* ============= Main ========== */
 /* ============= Seccion Invitacion ========== */
 .invitacion-section {
-    min-height: 100vh;
+    min-height: 90vh;
     background-image: url("../img/Flores1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: -90px;
+    background-position-x: 50%;
+    padding-top: 96px;
 }
 
 /* =========== Seccion countdown ========= */
 .countdown-section {
-    padding: 2rem 0;
-    margin-bottom: 2rem;
+    min-height: 90vh;
     background-color: #ff0900;
     background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     color: white;
 }
 
-.countdown-section .marco {
-    margin: 1rem 0 2rem;
+.countdown-section .heart {
+    margin: 3rem 0;
     width: 100%;
     aspect-ratio: 4 / 3;
     background-image: url("../img/marco.png");
@@ -124,7 +157,7 @@ input {
     justify-content: center;
 }
 
-.countdown-section .marco > div {
+.countdown-section .heart > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
@@ -136,29 +169,17 @@ input {
 
 .countdown-section .countdown {
     font-size: 2rem;
-
 }
 
 /* =========== Seccion itinerario ========= */
-.itinerario-section {
-    margin: 2rem 0;
-}
-
 .itinerario-section .itinerario {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     align-items: stretch;
-}
-
-.itinerario-section .horarios {
-    padding: 1rem;
+    margin: 1rem 0;
 }
 
 /* =========== Sección Codigo de vestimenta ========= */
-.codigo-vestimenta-section {
-    margin: 2rem 0;
-}
-
 .custom-icon {
     width: 5rem;
     height: 5rem;
@@ -173,14 +194,16 @@ input {
 }
 
 /* =========== Sección Confirmación ========= */
-.confirmacion-section {
-    margin: 4rem 0;
-}
-
 .confirmacion-section form {
-    background-color: white;
     padding: 1rem 1rem 0;
+    background-color: white;
     border-radius: 25px;
     box-shadow: 1px 1px 15px 0 #a89e8e;
 }
 
+/* =========== Footer ========= */
+footer {
+    margin-top: 4rem;
+    padding: 1rem 0;
+    font-size: 0.75rem;
+}
