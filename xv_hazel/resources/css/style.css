@@ -194,6 +194,20 @@ hr {
 }
 
 /* =========== Sección Confirmación ========= */
+.lluvia-de-sobres-section {
+    background-color: #ff0900;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+    color: white;
+    padding-top: 2rem;
+}
+
+.lluvia-de-sobres-section img {
+    width: 256px;
+    height: auto;
+}
+
+
+/* =========== Sección Confirmación ========= */
 .confirmacion-section form {
     padding: 1rem 1rem 0;
     background-color: white;
