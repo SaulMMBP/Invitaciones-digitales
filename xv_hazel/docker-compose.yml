@@ -1,0 +1,9 @@
+services:
+    xvhazel:
+        container_name: xvhazel
+        image: nginx
+        restart: always
+        ports:
+            - 8080:80
+        volumes:
+            - ./:/usr/share/nginx/html
